@@ -13,8 +13,15 @@ function draw() {
     stroke(255);
     strokeWeight(4);
     noFill();
+
+    if (mouseX > 250 && mouseX < 350 && mouseY > 150 && mouseY < 250) {
+        if (mouseIsPressed){
+        background(0, 255, 0)
+         }
+        fill(255, 0, 200);
+    }
     rectMode(CENTER);
-    rect(300, 200, 100, 100);
+    rect(300, 200, 200, 100, 30);
 }
 
 function mousePressed (){
@@ -23,12 +30,7 @@ function mousePressed (){
         // if mouse is within that boundary, make the variable become opposite!
     }
 }
-    // if (mouseX > 250 && mouseX < 350 && mouseY > 150 && mouseY < 250) {
-    //     if (mouseIsPressed){
-    //     background(0, 255, 0)
-    //      }
-    //     fill(255, 0, 200);
-    // }
+
 
 
 
